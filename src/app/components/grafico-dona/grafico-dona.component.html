@@ -1,0 +1,10 @@
+<div *ngIf = 'dataDonut'>
+       <div class="card-title">{{title}}</div>
+        <canvas baseChart
+        [data]= 'doughnutChartData'
+        [labels]='doughnutChartLabels'
+        [chartType]='doughnutChartType'></canvas>
+</div>
+<div *ngIf = '!dataDonut'>
+    <p>Sin datos</p>
+</div>
