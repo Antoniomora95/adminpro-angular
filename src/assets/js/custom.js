@@ -4,6 +4,7 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
+function init_plugins () {
 $(function() {
     "use strict";
     $(function() {
@@ -155,3 +156,4 @@ $(function() {
     });
 
 });
+}

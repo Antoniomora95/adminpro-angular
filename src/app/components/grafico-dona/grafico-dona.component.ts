@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./grafico-dona.component.css']
 })
 export class GraficoDonaComponent implements OnInit {
-  @Input() dataDonut: any;
+  @Input() dataDonut: any = {};
 
   private doughnutChartLabels: string[] = [];
   private doughnutChartData: number[] = [];
@@ -17,7 +17,7 @@ export class GraficoDonaComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(this.dataDonut);
+    console.log(typeof  this.dataDonut);
     this.doughnutChartLabels = this.dataDonut.labels;
     this.doughnutChartData = this.dataDonut.data;
     this.doughnutChartType = this.dataDonut.type;

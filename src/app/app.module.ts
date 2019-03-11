@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
   /*Rutas principales
  Si nos encontramos algo que diga module o rutas
  siempre va en la parte de los imports*/
@@ -11,10 +10,15 @@ import { APP_ROUTES } from './app.routes';
 // MODULOS
 import { PagesModule } from './pages/pages.module';
 
+// SERVICIOS
+import { ServiceModule } from './services/service.module';
+
 // COMPONENTES
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     PagesModule,
+    FormsModule,
+    ServiceModule,
     APP_ROUTES
   ],
   providers: [],

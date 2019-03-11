@@ -20,6 +20,7 @@ import { SharedModule } from '../shared/shared.module';
 // Este sera temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 
 
@@ -31,7 +32,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
       Graficas1Component,
       ProgressComponent,
       IncrementadorComponent,
-      GraficoDonaComponent
+      GraficoDonaComponent,
+      AcountSettingsComponent
   ],
   imports: [
       CommonModule,
