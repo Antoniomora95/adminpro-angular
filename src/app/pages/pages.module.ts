@@ -21,6 +21,8 @@ import { SharedModule } from '../shared/shared.module';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -33,7 +35,9 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
       ProgressComponent,
       IncrementadorComponent,
       GraficoDonaComponent,
-      AcountSettingsComponent
+      AcountSettingsComponent,
+      PromesasComponent,
+      RxjsComponent
   ],
   imports: [
       CommonModule,
