@@ -29,7 +29,7 @@
           </div>
         </div>
         
-        <div class="form-group">
+        <div class="form-group" *ngIf="myForm.errors?.sonIguales && !myForm.pristine">
             <div style="width: 100%; height: 20px;"><p class="text-danger" *ngIf="myForm.errors?.sonIguales && !myForm.pristine">
               Las contraseñas deben ser iguales
             </div>

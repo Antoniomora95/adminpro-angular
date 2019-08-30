@@ -22,4 +22,19 @@ export class UsuarioService {
     })
     );
   }
+  login (usuario: Usuario, recordar: boolean) {
+    if (recordar) {
+      localStorage.setItem('email', usuario.email);
+    } else {
+      localStorage.removeItem('email');
+    }
+    let url = URL_SERVICIOS + '/login';
+    return this.http.post(url, usuario)
+    .pipe(
+      map(response => {
+        localStorage.setItem('login', JSON.stringify(response));
+        return true;
+      })
+    );
+  }
 }
