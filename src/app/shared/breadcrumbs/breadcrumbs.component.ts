@@ -9,7 +9,7 @@ import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
   styles: []
 })
 export class BreadcrumbsComponent implements OnInit {
-  private title: string;
+  title: string;
   constructor(private router: Router, private titlePage: Title, private meta: Meta ) {
     this.getDataRoute()
     .subscribe(data => {
